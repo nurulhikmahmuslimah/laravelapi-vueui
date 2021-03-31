@@ -21,7 +21,7 @@
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/Createfriends">Create Friends</router-link>
-          </li>
+          </li>            
           <li class="nav-item">
             <router-link class="nav-link" to="/Editfriends">Edit Friends</router-link>
           </li>
