@@ -1,10 +1,10 @@
 <template>
   <div class="card shadow mt-3">
     <div class="card-body">
-      <h5 class="card-title">Add Friend</h5>
+      <h5 class="card-title">ADD FRIEND</h5>
       <form class="row g-3" @submit.prevent="store">
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Nama</label>
+          <label for="inputEmail4" class="form-label">NAMA</label>
           <input
             type="text"
             class="form-control"
@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">No Tlp</label>
+          <label for="inputPassword4" class="form-label">NO TLP</label>
           <input
             type="number"
             class="form-control"
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="col-12">
-          <label for="inputAddress" class="form-label">Alamat</label>
+          <label for="inputAddress" class="form-label">ALAMAT</label>
           <input
             type="text"
             class="form-control"
@@ -42,7 +42,7 @@
         </div>
 
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Add</button>
+          <button type="submit" class="btn btn-primary">ADD</button>
         </div>
       </form>
     </div>
@@ -70,7 +70,7 @@ export default {
       let alamat = friend.alamat;
 
       axios
-        .post('http://pia.labirin.co.id/api/friends', {
+        .post('http://127.0.0.1:8000/api/friends', {
           nama: nama,
           no_tlp: no_tlp,
           alamat: alamat,
